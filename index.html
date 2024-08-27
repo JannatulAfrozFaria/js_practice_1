@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+    <script>
+        function changPara(){
+            document.getElementById("changeP").innerHTML = "Paragraph changed."
+        }
+    </script>
+</head>
+<body>
+    <h1>SETTING INNER HTML</h1>
+    <button onclick="document.getElementById('date').innerHTML=Date()" >Click to show Date Below</button>
+    <p id="date"></p>
+    <h1>Changing the Paragraph <span style="color: rgb(224, 65, 65);">writing the js in head tag</span> </h1>
+    <p id="changeP">A demo Paragraph</p>
+    <button onclick="changPara()" >Change</button>
+    <h1>Changing the Paragraph <span style="color: rgb(224, 65, 65);">writing the js in body tag</span> </h1>
+    <p id="changePara">Demo Paragraph 2</p>
+    <button onclick="changParagraph()" >Change</button>
+    <script>
+        function changParagraph(){
+            document.getElementById("changePara").innerHTML = "Demo Paragraph 2 changed."
+        }
+    </script>
+    <h1>ADDITION</h1>
+    <p id="addResult"></p>
+    <script>
+        document.getElementById("addResult").innerHTML = 3+8;
+    </script>
+    <!-- document.write should only be used for testing -->
+    <script>document.write(5+9)</script>
+    <script>window.alert('This is window.alert() command')</script>
+    <!-- ONLY EXCEPTION to control output devices with JS -->
+     <h2>JS cannot access output devices. The only exception is window.print()</h2>
+     <button onclick="window.print()">Print this page</button>
+
+    <h1>Changing the Paragraph <span style="color: rgb(224, 65, 65);">writing the js in external file</span> </h1>
+    <p id="changePara3">Demo Paragraph 3</p>
+    <button onclick="myFunction()" >Change</button>
+    
+    <script src="myScript.js"></script>
+</body>
+</html>
