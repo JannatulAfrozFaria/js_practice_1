@@ -1,6 +1,23 @@
 function myFunction(){
     document.getElementById("changePara3").innerHTML = "Demo Paragraph 3 changed."
 }
+//  OPERATORS--------
+//  Arithmetic Operators
+// + , - , * , / , %, ++, --
+
+// logical operator 
+// ||, &&, !, 
+
+// Comparison Operators
+// >, <, >=, <=, ?, ==, ===, !=, !==,
+
+// Assignment Operators
+// =, +=, -=, *=, /=, %=, **=
+
+// Arithmetic Operators
+//  typeof
+//  instanceof
+
 // ADDING STRINGS AND NUMBERS------
 let x = 5 + 5;
 let y = "5" + 5;
