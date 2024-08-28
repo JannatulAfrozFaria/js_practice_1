@@ -27,3 +27,8 @@ console.log(y);
 console.log(z);
 // TYPE OF------CHECKS THE TYPE OF A VARIABLE
 console.log(typeof z);
+
+//DATA-----TYPES
+// JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+let s = 16 + 4 + "Volvo";
+console.log(s);
