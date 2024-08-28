@@ -30,5 +30,9 @@ console.log(typeof z);
 
 //DATA-----TYPES
 // JavaScript evaluates expressions from left to right. Different sequences can produce different results:
-let s = 16 + 4 + "Volvo";
-console.log(s);
+let t = 16 + 4 + "Volvo";
+//output : 20Volvo
+console.log(t);
+let t1 = "Volvo" + 16 + 4;
+//output : Volvo164
+console.log(t1);
