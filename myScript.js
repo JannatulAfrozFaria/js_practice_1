@@ -36,3 +36,7 @@ console.log(t);
 let t1 = "Volvo" + 16 + 4;
 //output : Volvo164
 console.log(t1);
+
+//adding numbers and strings
+let age = "He is" + (2021-1990) + "years old"; 
+console.log(age);
