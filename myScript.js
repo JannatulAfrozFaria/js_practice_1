@@ -8,3 +8,5 @@ let z = "Hello" + 5;
 console.log(x);
 console.log(y);
 console.log(z);
+// TYPE OF------CHECKS THE TYPE OF A VARIABLE
+console.log(typeof z);
