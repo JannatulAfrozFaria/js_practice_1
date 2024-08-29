@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Practice</title>
     <script>
-        function changPara(){
+        function changPara() {
             document.getElementById("changeP").innerHTML = "Paragraph changed."
         }
     </script>
 </head>
+
 <body>
     <h1>SETTING INNER HTML</h1>
-    <button onclick="document.getElementById('date').innerHTML=Date()" >Click to show Date Below</button>
+    <button onclick="document.getElementById('date').innerHTML=Date()">Click to show Date Below</button>
     <p id="date"></p>
     <h1>Changing the Paragraph <span style="color: rgb(224, 65, 65);">writing the js in head tag</span> </h1>
     <p id="changeP">A demo Paragraph</p>
-    <button onclick="changPara()" >Change</button>
+    <button onclick="changPara()">Change</button>
     <h1>Changing the Paragraph <span style="color: rgb(224, 65, 65);">writing the js in body tag</span> </h1>
     <p id="changePara">Demo Paragraph 2</p>
-    <button onclick="changParagraph()" >Change</button>
+    <button onclick="changParagraph()">Change</button>
     <script>
-        function changParagraph(){
+        function changParagraph() {
             document.getElementById("changePara").innerHTML = "Demo Paragraph 2 changed."
         }
     </script>
     <h1>ADDITION</h1>
     <p id="addResult"></p>
     <script>
-        document.getElementById("addResult").innerHTML = 3+8;
+        document.getElementById("addResult").innerHTML = 3 + 8;
     </script>
     <!-- document.write should only be used for testing -->
-    <script>document.write(5+9)</script>
+    <script>document.write(5 + 9)</script>
     <script>window.alert('This is window.alert() command')</script>
     <!-- ONLY EXCEPTION to control output devices with JS -->
-     <h2>JS cannot access output devices. The only exception is window.print()</h2>
-     <button onclick="window.print()">Print this page</button>
+    <h2>JS cannot access output devices. The only exception is window.print()</h2>
+    <button onclick="window.print()">Print this page</button>
     <!-- USE OF VAR, LET, CONST -->
-     <h1>var</h1>
-     <ul>
+    <h1>var</h1>
+    <ul>
         <li>redeclaring a variable inside a block will also redeclare the variable outside the block</li>
         <li>Variables declared with let have Global Scope</li>
         <li>var can be redeclared multiple times in the same scope. that's why the chances of error increases.</li>
-     </ul>
-     <!-- LET--------------- -->
-     <h1>let</h1>
-     <ul>
+    </ul>
+    <!-- LET--------------- -->
+    <h1>let</h1>
+    <ul>
         <li>redeclaring a variable inside a block will not redeclare the variable outside the block</li>
         <li>Variables declared with let have Block Scope</li>
         <li>Variables declared with let must be Declared before use</li>
         <li>Variables declared with let cannot be accessed outside the block scope</li>
         <li>Variables declared with let cannot be Redeclared in the same scope</li>
-     </ul>
-     
-     <h1>is var and let both are hoisted? what is the difference?</h1>
-     <p>Yes, both are hoisted. The difference is var is hoisted and it assigns the value as "undefined". <br>
-        In case of let, the variable is hoisted ( brought to the top of code) but it's value is not set as "undefined" (means not initialized as var)
-     </p>
-     <!-- CONST------------------- -->
-      <h1>const</h1>
-      <ul>
+    </ul>
+
+    <h1>is var and let both are hoisted? what is the difference?</h1>
+    <p>Yes, both are hoisted. The difference is var is hoisted and it assigns the value as "undefined". <br>
+        In case of let, the variable is hoisted ( brought to the top of code) but it's value is not set as "undefined"
+        (means not initialized as var)
+    </p>
+    <!-- CONST------------------- -->
+    <h1>const</h1>
+    <ul>
         <li>const is Block scoped</li>
         <li>const cannot be re-assigned in the same scope</li>
         <li>const must be assigned with a value when declared. no line break in allowed.</li>
@@ -74,72 +77,78 @@
         <li>it dost not define a constant value. It defines a const reference to a value</li>
         <li>const value, array, object cannot be re-assigned. But we can change a const array and obj.</li>
         <li>You can change the elements of a const array, but u can not re-assign the array</li>
-      </ul>
-      <h1>Operators and Operands</h1>
-      <ul>
+    </ul>
+    <h1>Operators and Operands</h1>
+    <ul>
         <li>The numbers (in an arithmetic operation) are called operands.</li>
         <li>The operation (to be performed between the two operands) is defined by an operator.</li>
-      </ul>
-      <h1>Assignment Operators</h1>
-      <p>x += 5 </p>
-      <p>means x = x + 5</p>
-      <p>% means remainder. </p>
-      <p>let x = 10;</p>
-      <p>x %= 5; //means x= x/5, meaning x= 10/5, which has no remainder. so the answer would be 0 in this case.</p>
-      <!-- difference between ARRAY AND OBJECT -->
-      <h1>Difference between Array and Object</h1>
-      <p>Array elements are seperated by comma, written within square bracket.</p>
-      <p>Objects properties are written as name:value pairs, seperated by commas, written within curly braces.</p>
-      <!-- UNDEFINED -->
-      <h1>What is Undefined Data Type?</h1>
-      <p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
-      <!-- EMPTY VALUE -->
-       <h1>Empty Values</h1>
-       <p>An empty value has nothing to do with undefined.
-         An empty string has both a legal value and a type.</p>
-         <p>let car = "";    // The value is "", the typeof is "string"</p>
-        <!-- FUNCTION ------------->
-         <h1>JavaScript Function Syntax</h1>
-         <p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses (). <br>
-            Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). <br>
-            The parentheses may include parameter names separated by commas: <br>
-            (parameter1, parameter2, ...) <br>
-            The code to be executed, by the function, is placed inside curly brackets: {}</p>
-        <ul>
-            <li>Function parameters are listed inside the parentheses () in the function definition.</li>
-            <li> Function arguments are the values received by the function when it is invoked.</li>
-            <li>Inside the function, the arguments (the parameters) behave as local variables.</li>
-        </ul>
-        <!-- FUNCTION-------INVOCATION---------------- -->
-         <h1>Function Invocation</h1>
-         <p>The code inside the function will execute when "something" invokes (calls) the function:</p>
-         <ul>
-            <li>When an event occurs (when a user clicks a button)</li>
-            <li>When it is invoked (called) from JavaScript code</li>
-            <li>Automatically (self invoked)</li>
-         </ul>
-         <!-- FUNCTION---------RETURN------------------- -->
-          <h1>Function Return</h1>
-          <p>When JavaScript reaches a return statement, the function will stop executing. <br>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
-          <p>When we do not return anything from a function, by default js returns undefined. </p>
-          <p>variable inside a function cannot be accessed outside the function.</p>
-          <h2>Convert fahrenheit to celsius:</h2>
-          <p id="convert"></p>
-          <p id="resultant"></p>
-          <h1>Objects</h1>
-          <ul>
-            <li>Objects are containers for Properties and Methods.</li>
-            <li>Properties are named Values.</li>
-            <li>Methods are Functions stored as Properties.</li>
-            <li>Properties can be primitive values, functions, or even other objects.</li>
-          </ul>
-          <h1>JavaScript Events</h1>
-          <p>HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>
-     <!-- last button---  -->
+    </ul>
+    <h1>Assignment Operators</h1>
+    <p>x += 5 </p>
+    <p>means x = x + 5</p>
+    <p>% means remainder. </p>
+    <p>let x = 10;</p>
+    <p>x %= 5; //means x= x/5, meaning x= 10/5, which has no remainder. so the answer would be 0 in this case.</p>
+    <!-- difference between ARRAY AND OBJECT -->
+    <h1>Difference between Array and Object</h1>
+    <p>Array elements are seperated by comma, written within square bracket.</p>
+    <p>Objects properties are written as name:value pairs, seperated by commas, written within curly braces.</p>
+    <!-- UNDEFINED -->
+    <h1>What is Undefined Data Type?</h1>
+    <p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
+    <!-- EMPTY VALUE -->
+    <h1>Empty Values</h1>
+    <p>An empty value has nothing to do with undefined.
+        An empty string has both a legal value and a type.</p>
+    <p>let car = ""; // The value is "", the typeof is "string"</p>
+    <!-- FUNCTION ------------->
+    <h1>JavaScript Function Syntax</h1>
+    <p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses (). <br>
+        Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). <br>
+        The parentheses may include parameter names separated by commas: <br>
+        (parameter1, parameter2, ...) <br>
+        The code to be executed, by the function, is placed inside curly brackets: {}</p>
+    <ul>
+        <li>Function parameters are listed inside the parentheses () in the function definition.</li>
+        <li> Function arguments are the values received by the function when it is invoked.</li>
+        <li>Inside the function, the arguments (the parameters) behave as local variables.</li>
+    </ul>
+    <!-- FUNCTION-------INVOCATION---------------- -->
+    <h1>Function Invocation</h1>
+    <p>The code inside the function will execute when "something" invokes (calls) the function:</p>
+    <ul>
+        <li>When an event occurs (when a user clicks a button)</li>
+        <li>When it is invoked (called) from JavaScript code</li>
+        <li>Automatically (self invoked)</li>
+    </ul>
+    <!-- FUNCTION---------RETURN------------------- -->
+    <h1>Function Return</h1>
+    <p>When JavaScript reaches a return statement, the function will stop executing. <br>If the function was invoked
+        from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+    <p>When we do not return anything from a function, by default js returns undefined. </p>
+    <p>variable inside a function cannot be accessed outside the function.</p>
+    <h2>Convert fahrenheit to celsius:</h2>
+    <p id="convert"></p>
+    <p id="resultant"></p>
+    <h1>Objects</h1>
+    <ul>
+        <li>Objects are containers for Properties and Methods.</li>
+        <li>Properties are named Values.</li>
+        <li>Methods are Functions stored as Properties.</li>
+        <li>Properties can be primitive values, functions, or even other objects.</li>
+    </ul>
+    <h1>JavaScript Events</h1>
+    <p>HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can
+        "react" on these events.</p>
+    <button onclick="document.getElementById('demo1').innerHTML=Date()">The time is?</button>
+    <p id="demo1"></p>
+
+    <!-- last button---  -->
     <h1>Changing the Paragraph <span style="color: rgb(224, 65, 65);">writing the js in external file</span> </h1>
     <p id="changePara3">Demo Paragraph 3</p>
-    <button onclick="myFunction()" >Change</button>
-    
+    <button onclick="myFunction()">Change</button>
+
     <script src="myScript.js"></script>
 </body>
+
 </html>
