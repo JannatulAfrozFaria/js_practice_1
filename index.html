@@ -143,6 +143,16 @@
     <button onclick="document.getElementById('demo1').innerHTML=Date()">The time is?</button>
     <p id="demo1"></p>
     <button onclick="this.innerHTML=Date()">The time is?</button>
+    <p>JavaScript code is often several lines long. It is more common to see event attributes calling functions:</p>
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The time is?</button>
+    <script>
+        function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+
+
     <!-- last button---  -->
     <h1>Changing the Paragraph <span style="color: rgb(224, 65, 65);">writing the js in external file</span> </h1>
     <p id="changePara3">Demo Paragraph 3</p>
