@@ -54,6 +54,7 @@ document.getElementById("resultant").innerHTML = "The converted temperature is" 
 const car = {
     type:"Fiat", 
     model:"500", 
+    weight: "850kg",
     color:"white",
     start: function(){
         console.log("car is starting");
