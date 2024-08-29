@@ -49,3 +49,13 @@ function toCelsius(f) {
 let value = toCelsius(77);
 document.getElementById("convert").innerHTML = value;
 document.getElementById("resultant").innerHTML = "The converted temperature is" + toCelsius(77) + "Celsius";
+
+//OBJECT--------------
+const car = {
+    type:"Fiat", 
+    model:"500", 
+    color:"white",
+    start: function(){
+        console.log("start");
+    }
+};
