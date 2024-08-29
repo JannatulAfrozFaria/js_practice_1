@@ -88,3 +88,10 @@ console.log(typeof k);
 let text = "A B C";
 let length = text.length;
 console.log(length);
+
+//JS ESCAPE-----CHARACTER
+// let text = "We are the so-called "Vikings" from the north.";
+// The string will be chopped to "We are the so-called ".
+// To solve this problem, you can use an backslash escape character.
+// The backslash escape character (\) turns special characters into string characters
+let text1 = "We are the so-called \"Vikings\" from the north.";
