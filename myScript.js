@@ -63,3 +63,6 @@ const car = {
         console.log("car is driving");
     }
 };
+console.log(car.type);
+console.log(car[model]);
+car.start();
