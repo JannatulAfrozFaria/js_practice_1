@@ -56,6 +56,9 @@ const car = {
     model:"500", 
     color:"white",
     start: function(){
-        console.log("start");
+        console.log("car is starting");
+    },
+    drive: function(){
+        console.log("car is driving");
     }
 };
