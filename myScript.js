@@ -66,3 +66,12 @@ const car = {
 console.log(car.type);
 console.log(car["model"]);
 car.start();
+//use------of----this----in----object
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }; //this refers to the owner of the function
