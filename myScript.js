@@ -87,3 +87,4 @@ console.log(typeof k);
 //SREING----LENGTH
 let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let length = text.length;
+console.log(length);
