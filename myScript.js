@@ -52,15 +52,15 @@ document.getElementById("resultant").innerHTML = "The converted temperature is" 
 
 //OBJECT--------------
 const car = {
-    type:"Fiat", 
-    model:"500", 
+    type: "Fiat",
+    model: "500",
     weight: "850kg",
-    color:"white",
-    start: function(){
+    color: "white",
+    start: function () {
         this.drive(); //this refers to the owner of the function
         console.log("car is starting");
     },
-    drive: function(){
+    drive: function () {
         console.log("car is driving");
     }
 };
@@ -72,14 +72,18 @@ const person = {
     firstName: "John",
     lastName: "Doe",
     id: 5566,
-    fullName: function() {
-      return this.firstName + " " + this.lastName;
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
     }
-  }; 
+};
 
-  let r = "Rahim"; //literal syntax
-  console.log(r);
-  console.log(typeof r);
-  let k = new String("Karim"); //it becomes an object
-  console.log(k);
-  console.log(typeof k);
+let r = "Rahim"; //literal syntax
+console.log(r);
+console.log(typeof r);
+let k = new String("Karim"); //it becomes an object
+console.log(k);
+console.log(typeof k);
+
+//SREING----LENGTH
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
