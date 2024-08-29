@@ -57,6 +57,7 @@ const car = {
     weight: "850kg",
     color:"white",
     start: function(){
+        this.drive(); //this refers to the owner of the function
         console.log("car is starting");
     },
     drive: function(){
@@ -74,4 +75,4 @@ const person = {
     fullName: function() {
       return this.firstName + " " + this.lastName;
     }
-  }; //this refers to the owner of the function
+  }; 
