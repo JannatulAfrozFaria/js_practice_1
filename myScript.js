@@ -76,3 +76,8 @@ const person = {
       return this.firstName + " " + this.lastName;
     }
   }; 
+
+  let r = "Rahim"; //literal syntax
+  console.log(r);
+  console.log(typeof r);
+  let k = new String("Karim"); //it becomes an object
