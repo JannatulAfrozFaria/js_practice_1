@@ -95,3 +95,4 @@ console.log(length);
 // To solve this problem, you can use an backslash escape character.
 // The backslash escape character (\) turns special characters into string characters
 let text1 = "We are the so-called \"Vikings\" from the north.";
+let text2 = "We are the so-called \\Vikings\\ from the north."; //to show the oblique sign in console.
