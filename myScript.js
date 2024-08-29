@@ -1,4 +1,4 @@
-function myFunction(){
+function myFunction() {
     document.getElementById("changePara3").innerHTML = "Demo Paragraph 3 changed."
 }
 //  OPERATORS--------
@@ -38,5 +38,13 @@ let t1 = "Volvo" + 16 + 4;
 console.log(t1);
 
 //adding numbers and strings
-let age = "He is" + (2021-1990) + "years old"; 
+let age = "He is" + (2021 - 1990) + "years old";
 console.log(age);
+
+//CONVERT Fahrenheit TO CELSIUS
+function toCelsius(f) {
+    return (5 / 9) * (f - 32);
+}
+
+let value = toCelsius(77);
+document.getElementById("convert").innerHTML = value;
