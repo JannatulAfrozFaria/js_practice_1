@@ -81,3 +81,5 @@ const person = {
   console.log(r);
   console.log(typeof r);
   let k = new String("Karim"); //it becomes an object
+  console.log(k);
+  console.log(typeof k);
