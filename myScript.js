@@ -48,3 +48,4 @@ function toCelsius(f) {
 
 let value = toCelsius(77);
 document.getElementById("convert").innerHTML = value;
+document.getElementById("resultant").innerHTML = "The converted temperature is" + toCelsius(77) + "Celsius";
