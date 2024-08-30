@@ -107,3 +107,11 @@ for (const x of tags) {
 }
 
 html += `</ul>`;
+//NUMBER------CONVERSION-------
+let myNumber = 32;
+myNumber.toString(32);//returns 10
+myNumber.toString(16);//returns 20
+myNumber.toString(12);//returns 28
+myNumber.toString(10);//returns 32
+myNumber.toString(8); //returns 40
+myNumber.toString(2); //returns 100000
