@@ -122,4 +122,15 @@ let obj = new Number(123);
 console.log( typeof num);
 console.log( typeof obj);
 
-//CONVERTING NUMBER --------TO-----STRING
+//CONVERT TO NUMBER--------------------
+//The Number() Method
+Number(true);
+Number(false);
+Number("10");
+Number("  10");
+Number("10  ");
+Number(" 10  ");
+Number("10.33");
+Number("10,33");
+Number("10 33");
+Number("John");
