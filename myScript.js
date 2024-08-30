@@ -115,3 +115,9 @@ myNumber.toString(12);//returns 28
 myNumber.toString(10);//returns 32
 myNumber.toString(8); //returns 40
 myNumber.toString(2); //returns 100000
+
+// NUMBERS-------AS-----OBJECTS
+let num = 123;
+let obj = new Number(123);
+console.log( typeof num);
+console.log( typeof obj);
