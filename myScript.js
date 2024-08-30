@@ -121,3 +121,5 @@ let num = 123;
 let obj = new Number(123);
 console.log( typeof num);
 console.log( typeof obj);
+
+//CONVERTING NUMBER --------TO-----STRING
