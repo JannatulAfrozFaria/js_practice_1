@@ -124,13 +124,21 @@ console.log( typeof obj);
 
 //CONVERT TO NUMBER--------------------
 //The Number() Method
-Number(true);
-Number(false);
-Number("10");
-Number("  10");
-Number("10  ");
-Number(" 10  ");
-Number("10.33");
-Number("10,33");
-Number("10 33");
-Number("John");
+console.log(Number(true));
+console.log(Number("10"));
+console.log(Number(false));
+console.log(Number("  10"));
+console.log(Number("10  "));
+console.log(Number(" 10  "));
+console.log(Number("10.33"));
+console.log(Number("10,33"));
+console.log(Number("10 33"));
+console.log(Number("John"));
+//The parseInt() Method
+console.log(parseInt("-10"));
+console.log(parseInt("-10.33"));
+console.log(parseInt("10"));
+console.log(parseInt("10.33"));
+console.log(parseInt("10 20 30"));
+console.log(parseInt("10 years"));
+console.log(parseInt("years 10"));
