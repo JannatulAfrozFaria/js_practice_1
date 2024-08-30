@@ -97,4 +97,13 @@ console.log(length);
 let text1 = "We are the so-called \"Vikings\" from the north.";
 let text2 = "We are the so-called \\Vikings\\ from the north."; //to show the oblique sign in console.
 
+//HTML --------------------------TEMPLATES
+let header = "Template Strings";
+let tags = ["template strings", "javascript", "es6"];
 
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
