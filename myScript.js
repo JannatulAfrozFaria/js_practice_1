@@ -142,3 +142,10 @@ console.log(parseInt("10.33"));
 console.log(parseInt("10 20 30"));
 console.log(parseInt("10 years"));
 console.log(parseInt("years 10"));
+//How to Recognize an Array------
+/*A common question is: How do I know if a variable is an array?
+
+The problem is that the JavaScript operator typeof returns "object":*/
+const fruits = ["Banana", "Orange", "Apple"];
+const answer = Array.isArray(fruits);
+console.log(answer);
