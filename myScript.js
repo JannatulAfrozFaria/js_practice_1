@@ -166,3 +166,8 @@ fruits4.splice(2, 2, "Lemon", "Kiwi");
 // With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array:
 const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
 fruits5.splice(0, 1);
+// (Merging Three Arrays)
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myChildren = arr1.concat(arr2, arr3);
