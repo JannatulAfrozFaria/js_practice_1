@@ -150,5 +150,9 @@ const answer = Array.isArray(fruits);
 console.log(answer);
 /**The instanceof operator returns true if an object is created by a given constructor: */
 const fruits2 = ["Banana", "Orange", "Apple"];
-const answer2 = (fruits instanceof Array);
+const answer2 = (fruits2 instanceof Array);
 console.log(answer2);
+// JavaScript Array splice()
+// The splice() method can be used to add new items to an array:
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+fruits3.splice(2, 0, "Lemon", "Kiwi");
