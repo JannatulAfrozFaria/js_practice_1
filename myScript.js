@@ -186,3 +186,9 @@ const citrus = fruits7.slice(1);
 //SORTIING------NUMBERS
 const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a - b});
+
+//------FLATMAP()
+const myArr = [1, 2, 3, 4, 5,6];
+const newArr = myArr.flatMap(x => [x, x * 10]);
+console.log(newArr);
+//output: 1,10,2,20,3,30,4,40,5,50,6,60
