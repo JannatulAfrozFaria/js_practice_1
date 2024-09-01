@@ -171,3 +171,9 @@ const arr1 = ["Cecilie", "Lone"];
 const arr2 = ["Emil", "Tobias", "Linus"];
 const arr3 = ["Robin", "Morgan"];
 const myChildren = arr1.concat(arr2, arr3);
+// SPLICE ------METHOD
+const fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+fruits6.splice(2, 0, "Lemon", "Kiwi");
+// SLICE ------METHOD
+const fruits7 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits7.slice(1);
