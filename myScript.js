@@ -171,9 +171,18 @@ const arr1 = ["Cecilie", "Lone"];
 const arr2 = ["Emil", "Tobias", "Linus"];
 const arr3 = ["Robin", "Morgan"];
 const myChildren = arr1.concat(arr2, arr3);
+
 // SPLICE ------METHOD
 const fruits6 = ["Banana", "Orange", "Apple", "Mango"];
 fruits6.splice(2, 0, "Lemon", "Kiwi");
+// The first parameter (2) defines the position where new elements should be added (spliced in).
+// The second parameter (0) defines how many elements should be removed.
+// The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+
 // SLICE ------METHOD
 const fruits7 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits7.slice(1);
+
+//SORTIING------NUMBERS
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
